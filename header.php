@@ -130,7 +130,7 @@ foreach ($result as $row) {
 
 	$cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 	
-	if($cur_page == 'index.php' || $cur_page == 'login.php' || $cur_page == 'registration.php' || $cur_page == 'cart.php' || $cur_page == 'checkout.php' || $cur_page == 'forget-password.php' || $cur_page == 'reset-password.php' || $cur_page == 'product-category.php' || $cur_page == 'product.php') {
+	if($cur_page == 'index.html' || $cur_page == 'login.php' || $cur_page == 'registration.php' || $cur_page == 'cart.php' || $cur_page == 'checkout.php' || $cur_page == 'forget-password.php' || $cur_page == 'reset-password.php' || $cur_page == 'product-category.php' || $cur_page == 'product.php') {
 		?>
 		<title><?php echo $meta_title_home; ?></title>
 		<meta name="keywords" content="<?php echo $meta_keyword_home; ?>">
@@ -280,7 +280,7 @@ foreach ($result as $row) {
 	<div class="container">
 		<div class="row inner">
 			<div class="col-md-4 logo">
-				<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
+				<a href="index.html"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
 			</div>
 			
 			<div class="col-md-5 right">
@@ -345,7 +345,7 @@ foreach ($result as $row) {
 				<div class="menu-container">
 					<div class="menu">
 						<ul>
-							<li><a href="index.php">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							
 							<?php
 							$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");

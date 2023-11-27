@@ -2,11 +2,11 @@
 
 <?php
 if(!isset($_REQUEST['search_text'])) {
-    header('location: index.php');
+    header('location: index.html');
     exit;
 } else {
 	if($_REQUEST['search_text']=='') {
-		header('location: index.php');
+		header('location: index.html');
     	exit;
 	}
 }
